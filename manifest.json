@@ -1,0 +1,27 @@
+{
+	"name": "Check All",
+	"description": "This extension checks, unchecks, or toggles all checkboxes on the page.",
+	"version": "1.1.1",
+	"manifest_version": 2,
+	"icons": { "16": "icon16.png",
+			   "48": "icon48.png",
+			  "128": "icon128.png" },
+		  
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+
+    "background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["content.js"],
+			"all_frames": true
+		}
+	]
+}

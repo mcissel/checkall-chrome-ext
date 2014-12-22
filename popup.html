@@ -1,0 +1,51 @@
+<script type="text/javascript" src="popup.js"></script>
+<style type="text/css">
+button {
+	width: 104px;
+	margin: 2px;
+	padding: 5px 0 4px 5px;
+	font-size: 14px;
+	border: 0px;
+	border-top: 1px solid white;
+	background: none;
+}
+button:hover {
+	border-top: 1px solid #97f7c9;
+	background: #65d69f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e9c72), to(#65d69f));
+	background: -webkit-linear-gradient(top, #3e9c72, #65d69f);
+	background: -moz-linear-gradient(top, #3e9c72, #65d69f);
+	background: -ms-linear-gradient(top, #3e9c72, #65d69f);
+	background: -o-linear-gradient(top, #3e9c72, #65d69f);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: white;
+}
+button:active {
+	border-top-color: #1e5c1b;
+	background: #1e5c1b;
+}
+button:focus {
+	outline: none;
+}
+button img {
+	float:left;
+}
+button div {
+	float: left;
+	padding: 6px;
+}
+</style>
+
+<hr style="margin-bottom: 3px;">
+<div style="height:80px;">
+    <button id="all"><img src="check.png"/><div>Check</div></button>
+    <button id="none"><img src="uncheck.png"/><div>Uncheck</div></button>
+    <button id="toggle"><img src="toggle.png"/><div>Toggle</div></button>
+</div>
+<hr style="margin-top: 50px; clear:both;">
